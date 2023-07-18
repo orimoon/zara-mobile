@@ -1,5 +1,5 @@
 @charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "contents";
+@import "mixin", "variables", "reset", "main", "contents";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -10,31 +10,62 @@
 }
 
 // header
+.container {
+  padding: 0 4%;
+}
+
 #header {
-  border-bottom: 1px solid #000;
-  .inner {
+  margin-bottom: 40px;
+  .row {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 70px;
   }
-  .lst-util {
+  .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+  .header-left-icons {
     display: flex;
     .btn-g {
-      width: 40px;
-      height: 70px;
-      &::before {
-        font-size: 20px;
-        font-family: "Font Awesome 6 Free";
+      &:before {
+        font-size: 24px;
+        font-family: "Font Awesome 6 free";
       }
     }
-    .btn-search::before {
-      content: "\f002";
+    .btn-menu::before {
+      content: "\f0c9";
       font-weight: 900;
     }
-    .btn-burger::before {
-      content: "\f007";
-      font-weight: 400;
+  }
+
+  .header-right-icons {
+    display: flex;
+    .btn-g {
+      &:before {
+        font-family: "Line Awesome Free";
+      }
     }
+    .btn-shopping::before {
+      font-size: 24px;
+      content: "\f290";
+      font-weight: 900;
+    }
+  }
+}
+.wrap {
+  .product-search {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  height: 3500px;
+  .slide-1 {
+    margin: 15px 0px 80px;
   }
 }

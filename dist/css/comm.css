@@ -1,29 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Poppins";
-  font-weight: 300;
-  src: url(../font/Poppins-Light.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 400;
-  src: url(../fonts/Poppins-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 500;
-  src: url(../fonts/Poppins-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 600;
-  src: url(../fonts/Poppins-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 700;
-  src: url(../fonts/Poppins-Bold.woff) format("woff");
-}
 /* reset */
 body,
 div,
@@ -280,6 +255,14 @@ legend {
   content: "";
 }
 
+body {
+  background: url(../../images/m.jpg) 0 0 no-repeat;
+  background-size: 100% auto;
+}
+body .wrap {
+  opacity: 0.7;
+}
+
 .main {
   height: 100px;
 }
@@ -292,31 +275,57 @@ legend {
   padding: 0 4%;
 }
 
-#header {
-  border-bottom: 1px solid #000;
+.container {
+  padding: 0 4%;
 }
-#header .inner {
+
+#header {
+  margin-bottom: 40px;
+}
+#header .row {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
 }
-#header .lst-util {
+#header .header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+#header .header-left-icons {
   display: flex;
 }
-#header .lst-util .btn-g {
-  width: 40px;
-  height: 70px;
+#header .header-left-icons .btn-g:before {
+  font-size: 24px;
+  font-family: "Font Awesome 6 free";
 }
-#header .lst-util .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 Free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f002";
+#header .header-left-icons .btn-menu::before {
+  content: "\f0c9";
   font-weight: 900;
 }
-#header .lst-util .btn-burger::before {
-  content: "\f007";
-  font-weight: 400;
+#header .header-right-icons {
+  display: flex;
+}
+#header .header-right-icons .btn-g:before {
+  font-family: "Line Awesome Free";
+}
+#header .header-right-icons .btn-shopping::before {
+  font-size: 24px;
+  content: "\f290";
+  font-weight: 900;
+}
+
+.wrap {
+  height: 3500px;
+}
+.wrap .product-search {
+  text-align: center;
+  font-size: 14px;
+}
+.wrap .slide-1 {
+  margin: 15px 0px 80px;
 }/*# sourceMappingURL=comm.css.map */
