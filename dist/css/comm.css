@@ -288,35 +288,70 @@ legend {
   height: 300px;
 }
 
+body {
+  height: 20vh;
+}
+
 .container {
-  padding: 0 4%;
+  margin: 5px;
 }
 
 #header {
-  border-bottom: 1px solid #000;
-}
-#header .inner {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
+  justify-content: center;
+  z-index: 5;
 }
-#header .lst-util {
-  display: flex;
+#header #logo img {
+  width: 107px;
+  height: 55px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-#header .lst-util .btn-g {
-  width: 40px;
-  height: 70px;
-}
-#header .lst-util .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 Free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f002";
+#header .btn-g::before {
   font-weight: 900;
+  font-family: "Font Awesome 6 free";
+  font-size: 20px;
 }
-#header .lst-util .btn-burger::before {
+#header .btn-ham {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .btn-ham::before {
+  content: "\f0c9";
+}
+#header .btn-my {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#header .btn-my::before {
   content: "\f007";
-  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.player {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+}
+
+.body {
+  background: url(../../images/contents/m.png) 0 0/100% auto no-repeat;
+  background-color: #fff;
+}
+.body .wrap {
+  opacity: 0.7px;
 }/*# sourceMappingURL=comm.css.map */
