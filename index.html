@@ -66,12 +66,64 @@
       <p class="">2,286제품</p>
     </div>
 
-    <div class="slide-wrap slide-1">
-      <img src="./images/comm/banner_2.jpg" alt="배너이미지">
-    </div>
-    <main id="main" class="container">컨텐츠</main>
+
+    <main id="main" class="container">
+      <div class="slide-wrap slide-1">
+        <img src="./images/comm/banner1.jpg" alt="배너이미지">
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">신상품</div>
+          <div class="swiper-slide">가방</div>
+          <div class="swiper-slide">레디 투 웨어</div>
+          <div class="swiper-slide">슈즈</div>
+          <div class="swiper-slide">악세사리</div>
+          <div class="swiper-slide">지갑</div>
+          <div class="swiper-slide">가죽소품</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+      </div>
+      <!-- swiper script -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 15,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+      <div class="filter-bar">
+        <form class="instock">
+          <input type="checkbox" name="in-stock" id="in-stock">
+          <label for="in-stock">재고있음</label>
+        </form>
+        <div class="icon">
+          <div class="filter">
+            <a href="#">
+              <span>필터</span>
+            </a>
+          </div>
+          <div class="grid">
+            <a href="#">
+              <span class="blind">그리드 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li><img src="" alt=""></li>
+        <li class="item-title"></li>
+      </ul>
+    </main>
     <footer id="footer" class="container">풋터</footer>
   </div>
+
+
 </body>
 
 </html>
