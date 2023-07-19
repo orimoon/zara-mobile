@@ -290,6 +290,7 @@ legend {
 
 body {
   height: 20vh;
+  background: hsl(0, 0%, 96%);
 }
 
 .container {
@@ -336,22 +337,49 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   padding-bottom: 56.25%;
 }
-
-.player {
+.wrapper #myvideo {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
-  z-index: 1;
 }
 
-.body {
-  background: url(../../images/contents/m.png) 0 0/100% auto no-repeat;
-  background-color: #fff;
+#main {
+  height: 500px;
 }
-.body .wrap {
-  opacity: 0.7px;
+#main .swiper-container {
+  position: relative;
+  width: 90vw;
+  height: 300px;
+}
+#main .swiper-container > .swiper-slide__content {
+  position: absolute;
+  top: 0;
+}
+#main .swiper-slide {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+}
+#main .swiper-slide img {
+  width: 100%;
+}
+#main .swiper-slide.swiper-slide-active {
+  transform: scale(1);
+}
+#main .swiper-slide__content {
+  height: 300px;
+}
+#main .main-bnr {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
 }/*# sourceMappingURL=comm.css.map */
