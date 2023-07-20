@@ -15,8 +15,8 @@ $(document).ready(function () {
         loop: true,
         loopAdditionalSlides: 30,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
         },
     });
 });
