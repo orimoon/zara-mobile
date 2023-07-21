@@ -370,6 +370,9 @@ legend {
   margin-top: 10px;
   text-align: center;
 }
+.swiper-container .slide-desc p {
+  margin-bottom: 20px;
+}
 .swiper-container .swiper-btn {
   position: absolute;
   top: 0;
@@ -382,4 +385,31 @@ legend {
 }
 .swiper-container .swiper-btn.swiper-next {
   right: 0;
+}
+
+#main .section-g {
+  display: flex;
+  flex-direction: column;
+}
+#main .section-g .sec-category a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 3s;
+}
+#main .section-g .sec-category a img {
+  width: 100%;
+}
+#main .section-g .sec-category a .txt-category {
+  position: absolute;
+  color: white;
+  font-family: "Rufina", serif;
+  font-size: 5em;
+}
+#main .section-g .sec-category a:hover img {
+  opacity: 0.5;
+}
+#main .section-g .sec-category a:hover .txt-category {
+  color: black;
 }/*# sourceMappingURL=comm.css.map */

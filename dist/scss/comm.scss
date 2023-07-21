@@ -86,6 +86,9 @@
         display: block;
         margin-top: 10px;
         text-align: center;
+        p {
+            margin-bottom: 20px;
+        }
     }
     .swiper-btn {
         position: absolute;
@@ -99,6 +102,40 @@
         }
         &.swiper-next {
             right: 0;
+        }
+    }
+}
+
+#main {
+    .section-g {
+        display: flex;
+        flex-direction: column;
+        .sec-category {
+            a {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: opacity 3s;
+                img {
+                    width: 100%;
+                }
+                .txt-category {
+                    position: absolute;
+                    color: white;
+                    font-family: "Rufina", serif;
+                    font-size: 5em;
+                }
+
+                &:hover {
+                    img {
+                        opacity: 0.5;
+                    }
+                    .txt-category {
+                        color: black;
+                    }
+                }
+            }
         }
     }
 }
