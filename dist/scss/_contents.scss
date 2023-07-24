@@ -1,3 +1,76 @@
-.contents {
-  height: 300px;
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1000;
+  margin-bottom: 40px;
+  .row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+  .header-left-icons {
+    display: flex;
+    .btn-g {
+      &:before {
+        font-size: 24px;
+        font-family: "Font Awesome 6 free";
+      }
+    }
+    .btn-before::before {
+      content: "\f053";
+      font-weight: 900;
+    }
+  }
+
+  .header-right-icons {
+    display: flex;
+    .btn-g {
+      &:before {
+        font-family: "Font Awesome 6 Free";
+      }
+    }
+    .btn-shopping::before {
+      font-size: 24px;
+      content: "\f002";
+      font-weight: 900;
+    }
+  }
+}
+// slide
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 50vh;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagniation {
+  width: 100px !important;
 }
