@@ -387,29 +387,39 @@ legend {
   right: 0;
 }
 
-#main .section-g {
+.section-g {
   display: flex;
   flex-direction: column;
 }
-#main .section-g .sec-category a {
+.section-g .sec-category a {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 3s;
 }
-#main .section-g .sec-category a img {
+.section-g .sec-category a img {
   width: 100%;
 }
-#main .section-g .sec-category a .txt-category {
+.section-g .sec-category a .txt-category {
   position: absolute;
   color: white;
   font-family: "Rufina", serif;
   font-size: 5em;
 }
-#main .section-g .sec-category a:hover img {
+.section-g .sec-category a:hover img {
   opacity: 0.5;
 }
-#main .section-g .sec-category a:hover .txt-category {
+.section-g .sec-category a:hover .txt-category {
   color: black;
+}
+
+.section-history {
+  background: #000;
+}
+.section-history .img {
+  width: 100%;
+}
+.section-history .img p {
+  color: white;
+  font-family: "Rufina", serif;
 }/*# sourceMappingURL=comm.css.map */
