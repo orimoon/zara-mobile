@@ -21,35 +21,6 @@ $(document).ready(function () {
     });
 });
 
-// $(document).ready(function () {
-//     var tl = gsap.timeline({
-//         scrollTrigger: {
-//             trigger: ".section-history",
-//             start: "top center",
-//             pin: true,
-//             end: "'bottom center",
-//             scrub: 1,
-//             invalidateOnRefresh: true,
-//         },
-//         defaults: {
-//             ease: "power2.out",
-//         },
-//     });
-// });
-
-// var tl = gsap.timeline();
-
-// tl.set(".sec-contents", {
-//     width: "768",
-//     height: "559",
-// });
-
-// tl.to(".sec-contents", {
-//     scale: 1.5,
-//     width: "100%",
-//     height: "100vh",
-// });
-
 // ScrollTrigger.matchMedia({
 
 // "(min-width:821px)" : function(){
