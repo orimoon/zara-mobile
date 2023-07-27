@@ -609,7 +609,7 @@ legend {
 }
 
 .item-detail-wrap {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .item-detail__txt {
@@ -625,7 +625,7 @@ legend {
 }
 
 .item-detail__option {
-  border-top: 1px solid #000;
+  border-top: 1px solid #dbdbdb;
 }
 
 .option-tag {
@@ -747,7 +747,7 @@ legend {
 }
 
 .accordion li i.fa-chevron-down {
-  right: 12px;
+  right: 0px;
   left: auto;
   font-size: 16px;
 }
@@ -786,17 +786,16 @@ legend {
 .recommend-item__title {
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .recommend-item__products-lst {
   overflow-y: hidden;
   overflow-x: auto;
   white-space: nowrap;
-  margin: 0 -5px;
-}
-
-.recommend-item__products-lst::-webkit-scrollbar-thumb {
-  background: red;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .products-item {
@@ -831,6 +830,59 @@ legend {
 
 .product-price {
   padding-top: 12px;
+}
+
+.footer-black {
+  background: #000;
+}
+
+.footer-info {
+  margin-top: 100px;
+}
+
+.info-col li {
+  margin-bottom: 15px;
+}
+.info-col a {
+  color: white;
+}
+
+.footer-acc-col {
+  margin: 0 auto;
+  padding: 70px 0 20px;
+  width: 100%;
+}
+
+.footer-acc .footer-acc-title {
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.footer-acc .footer-acc-title:after {
+  content: "\f067";
+  font-weight: 900;
+  font-family: "Line Awesome Free";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-acc.active .footer-acc-title:after {
+  content: "\f068";
+}
+
+.footer-acc-cont {
+  margin-bottom: 10px;
+}
+
+.footer-acc-cont * {
+  margin-top: 0;
+  line-height: 1.5;
 }
 
 .container {
@@ -889,5 +941,5 @@ legend {
   letter-spacing: -0.1px;
   font-weight: 600;
   letter-spacing: -0.01em;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #dbdbdb;
 }/*# sourceMappingURL=comm.css.map */
