@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 // ScrollTrigger.matchMedia({
 
-// "(min-width:821px)" : function(){
+// "(min-width:821px)" : function()
 
 //     var bS02Timeline = gsap.timeline({
 //         scrollTrigger : {
