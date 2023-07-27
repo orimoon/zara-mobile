@@ -792,6 +792,7 @@ legend {
   overflow-y: hidden;
   overflow-x: auto;
   white-space: nowrap;
+  margin: 0 -5px;
 }
 
 .recommend-item__products-lst::-webkit-scrollbar-thumb {
@@ -802,11 +803,8 @@ legend {
   display: inline-block;
   vertical-align: top;
   margin: 20px 0;
-  padding: 0 10px 0 0;
-  width: 160px;
-}
-.products-item:nth-child(4) {
-  padding-right: 0px;
+  padding: 0 5px;
+  width: 150px;
 }
 
 .info-box {
@@ -815,12 +813,13 @@ legend {
 
 .product-brand {
   padding-bottom: 2px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .product-name {
   line-height: 16px;
   max-height: 34px;
+  margin-bottom: 2px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -831,7 +830,7 @@ legend {
 }
 
 .product-price {
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .container {
@@ -883,7 +882,6 @@ legend {
 }
 
 .more-title {
-  margin: 20px 0;
   padding-top: 20px;
   align-items: center;
   max-width: 100%;
