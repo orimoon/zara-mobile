@@ -255,6 +255,62 @@ legend {
   content: "";
 }
 
+.container {
+  padding: 0 20px;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+  margin-bottom: 40px;
+}
+#header .row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+#header .header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+#header .header-left-icons {
+  display: flex;
+}
+#header .header-left-icons .btn-g:before {
+  font-size: 24px;
+  font-family: "Font Awesome 6 free";
+}
+#header .header-right-icons {
+  display: flex;
+}
+#header .header-right-icons .btn-shopping::before {
+  font-size: 24px;
+}
+
+.wrap .product-search {
+  text-align: center;
+  font-size: 14px;
+}
+
+.more-title {
+  padding-top: 20px;
+  align-items: center;
+  max-width: 100%;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-top: 1px solid #dbdbdb;
+}
+
 #header {
   position: sticky;
   top: 0;
@@ -836,25 +892,38 @@ legend {
   background: #000;
 }
 
-.footer-info {
+.footer-inner {
   margin-top: 100px;
+  color: white;
+}
+.footer-inner a {
+  color: #7e7e7e;
 }
 
-.info-col li {
-  margin-bottom: 15px;
+.footer-menu {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #323232;
 }
-.info-col a {
+
+.footer-info-col {
+  border-bottom: 1px solid #323232;
+}
+.footer-info-col li {
+  margin-bottom: 20px;
+}
+.footer-info-col a {
   color: white;
 }
 
 .footer-acc-col {
   margin: 0 auto;
-  padding: 70px 0 20px;
+  padding: 0 0 20px;
   width: 100%;
 }
 
 .footer-acc .footer-acc-title {
-  color: white;
+  margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
   letter-spacing: 2px;
@@ -862,22 +931,28 @@ legend {
 }
 
 .footer-acc .footer-acc-title:after {
-  content: "\f067";
+  content: "+";
   font-weight: 900;
-  font-family: "Line Awesome Free";
+  font-family: "Font Awesome 6 free";
   position: absolute;
-  right: 20px;
-  font-size: 20px;
-  top: 50%;
+  right: 0px;
+  font-size: 16px;
   transform: translateY(-50%);
+  transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.25s linear;
 }
 
 .footer-acc.active .footer-acc-title:after {
   content: "\f068";
+  transform: rotate(180deg);
 }
 
 .footer-acc-cont {
   margin-bottom: 10px;
+}
+.footer-acc-cont p {
+  border-bottom: 1px solid #323232;
+  padding-bottom: 20px;
 }
 
 .footer-acc-cont * {
@@ -885,61 +960,69 @@ legend {
   line-height: 1.5;
 }
 
-.container {
-  padding: 0 20px;
-}
-
-#header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 1000;
+.footer-sns ul {
+  display: flex;
   margin-bottom: 40px;
 }
-#header .row {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
+.footer-sns li {
+  margin-right: 15px;
+  font-size: 24px;
 }
-#header .header-logo {
+
+.footer-nation-wrap .input-nation {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
-#header .header-left-icons {
+.footer-nation-wrap .input-nation:checked ~ #nationNav {
+  top: 0%;
+}
+.footer-nation-wrap .label-nation {
+  cursor: pointer;
+  position: relative;
+  z-index: 1100;
   display: flex;
+  margin-bottom: 20px;
 }
-#header .header-left-icons .btn-g:before {
-  font-size: 24px;
+.footer-nation-wrap .label-nation span::before {
+  content: "\f3c5";
+  font-weight: 900;
   font-family: "Font Awesome 6 free";
+  margin-right: 10px;
 }
-#header .header-right-icons {
-  display: flex;
-}
-#header .header-right-icons .btn-shopping::before {
-  font-size: 24px;
-}
-
-.wrap {
-  height: 3500px;
-}
-.wrap .product-search {
-  text-align: center;
-  font-size: 14px;
+.footer-nation-wrap #nationNav {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 50px;
+  background: lightgreen;
+  transition: all 0.3s;
 }
 
-.more-title {
-  padding-top: 20px;
-  align-items: center;
-  max-width: 100%;
-  line-height: 24px;
-  letter-spacing: -0.1px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  border-top: 1px solid #dbdbdb;
+.foot-copyright {
+  color: #7e7e7e;
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+
+.footer-terms-col {
+  margin-bottom: 40px;
+}
+.footer-terms-col li {
+  margin: 0 0 20px 0;
+}
+
+.footer-korean-legal {
+  color: #7e7e7e;
+  padding-bottom: 40px;
+  font-size: 12px;
+}
+.footer-korean-legal a {
+  text-decoration: underline;
+  color: #cccccc;
 }/*# sourceMappingURL=comm.css.map */

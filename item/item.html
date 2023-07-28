@@ -336,56 +336,113 @@
       </div>
     </main>
     <footer class="footer-black">
-      <div class="footer-info container">
-        <div class="footer-body">
-          <div class="footer-menu">
-            <div class="info-col">
-              <ul>
-                <li>
-                  <a href="#">새로운소식</a>
-                </li>
-                <li>
-                  <a href="#">예약하기</a>
-                </li>
-                <li>
-                  <a href="#">매장안내</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-acc-col">
-              <div class="footer-acc">
-                <div class="footer-acc-title">고객지원</div>
-                <div class="footer-acc-cont">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book.</p>
-                </div>
-              </div>
-              <div class="footer-acc">
-                <div class="footer-acc-title">About Fendi</div>
-                <div class="footer-acc-cont">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                    been
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book.</p>
-                </div>
-
-              </div>
-              <script>
-                $(document).ready(function () {
-                  $('.footer-acc .footer-acc-title').click(function () {
-                    $(this).next('.footer-acc-cont').slideToggle();
-                    $(this).parent().toggleClass('active');
-                    $(this).parent().siblings().children('.footer-acc-cont').slideUp();
-                    $(this).parent().siblings().removeClass('active');
-                  });
-                });
-              </script>
-              <div class="footer-sns"></div>
-            </div>
-            <div class="footer-sub"></div>
-            <div class="footer-korean-legal"></div>
+      <div class="footer-inner container">
+        <div class="footer-menu">
+          <div class="footer-info-col">
+            <ul>
+              <li>
+                <a href="#">새로운소식</a>
+              </li>
+              <li>
+                <a href="#">예약하기</a>
+              </li>
+              <li>
+                <a href="#">매장안내</a>
+              </li>
+            </ul>
           </div>
+          <div class="footer-acc-col">
+            <div class="footer-acc">
+              <div class="footer-acc-title">고객지원</div>
+              <div class="footer-acc-cont">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+            <div class="footer-acc">
+              <div class="footer-acc-title">About Fendi</div>
+              <div class="footer-acc-cont">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                  been
+                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book.</p>
+              </div>
+
+            </div>
+            <script>
+              $(document).ready(function () {
+                $('.footer-acc .footer-acc-title').click(function () {
+                  $(this).next('.footer-acc-cont').slideToggle();
+                  $(this).parent().toggleClass('active');
+                  $(this).parent().siblings().children('.footer-acc-cont').slideUp();
+                  $(this).parent().siblings().removeClass('active');
+                });
+              });
+            </script>
+
+          </div>
+          <div class="footer-sns">
+            <ul>
+              <li>
+                <a href="#" title="facebook">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="youtube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="facebook">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nation-wrap">
+            <input type="checkbox" name="footBtn" id="footBtn" class="input-nation">
+            <label for="footBtn" class="label-nation">
+              <span>대한민국</span>
+            </label>
+            <div id="nationNav">navi</div>
+          </div>
+          <div class="foot-copyright">
+            <span>
+              &#169;FENDI - ALL RIGHTS RESERVED
+            </span>
+          </div>
+          <div class="footer-terms-col">
+            <ul>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">개인정보처리방침</a>
+              </li>
+              <li>
+                <a href="#">위치기반서비스약관</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-korean-legal">
+          <span>
+            펜디코리아(주)는 본 웹사이트와 관련하여 통신판매업신고(신고번호: 제 2020-서울강남-
+            02334호)를 필하였습니다. 자세한 회사 정보는 다음과 같습니다. <br /><br />
+            주소: 서울특별시 강남구 도산대로 310, 6층 <br />
+            이메일: CLIENT.SERVICES.KR@FENDI.COM <br />
+            전화번호 : 080-822-0216 <br /><br />
+            사업자등록번호: 211-86-71545 대표이사: 쥬세페 올리베리
+          </span>
+          <a href="#">사업자정보확인</a>
+        </div>
     </footer>
     <a href="#main" class="gotop">
       <i class="las la-arrow-circle-up"></i>
