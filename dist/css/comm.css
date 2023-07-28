@@ -303,6 +303,7 @@ legend {
 
 .cart-cont {
   border-bottom: 3px solid #000000;
+  margin-bottom: 30px;
 }
 .cart-cont .checkbox {
   margin: 15px 0;
@@ -376,8 +377,38 @@ legend {
   padding-top: 12px;
 }
 
-.cart-recommend .rec-tit {
-  padding: 38px 0;
+.rec-slide-wrap {
+  margin-top: 15px;
+  display: flex;
+  width: 30%;
+}
+.rec-slide-wrap .slide-cart-img {
+  position: relative;
+  margin-right: 30px;
+  overflow: hidden;
+  font-size: 18px;
+  background: #fff;
+}
+.rec-slide-wrap .slide-cart-img::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 100%;
+}
+.rec-slide-wrap .slide-cart-img img {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.rec-slide-wrap .text-wrap {
+  margin-top: 10px;
 }
 
 .container {
@@ -441,6 +472,7 @@ legend {
   position: relative;
   height: auto;
   min-height: 300px;
+  overflow: hidden;
 }
 .swiper-container .swiper-slide {
   margin-top: 20px;
@@ -504,35 +536,4 @@ legend {
 }
 .section-g .sec-category a:hover .txt-category {
   color: black;
-}
-
-.section-history {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #000;
-}
-.section-history .sec-contents {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.section-history .sec-contents h2 {
-  color: white;
-  font-family: "Rufina", serif;
-  font-size: 5.7143rem;
-}
-.section-history .txt-left {
-  position: absolute;
-  top: 50%;
-  left: -50%;
-  transform: translate(50%, -50%);
-}
-.section-history .txt-right {
-  position: absolute;
-  top: 50%;
-  right: -30%;
-  transform: translate(30%, -50%);
 }/*# sourceMappingURL=comm.css.map */
