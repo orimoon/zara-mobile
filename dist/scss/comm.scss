@@ -1,176 +1,71 @@
 @charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "reset";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 // 공통
 .container {
-    margin: 0 4%;
+  padding: 0 20px;
 }
+
+// header
 
 #header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255, 0.5);
+  z-index: 1000;
+  margin-bottom: 40px;
+  .row {
     position: relative;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
-    justify-content: center;
-    z-index: 5;
-    background: #ffffff;
-
-    #logo img {
-        width: 107px;
-        height: 55px;
-        object-fit: cover;
-    }
-    .btn-g::before {
-        font-weight: 900;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+  .header-left-icons {
+    display: flex;
+    .btn-g {
+      &:before {
+        font-size: 24px;
         font-family: "Font Awesome 6 free";
-        font-size: 20px;
+      }
     }
+  }
 
-    .btn-ham {
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        &::before {
-            content: "\f0c9";
-        }
-    }
-    .btn-my {
-        position: absolute;
-        top: 0;
-        right: 0;
-        &::before {
-            content: "\f007";
-        }
-    }
-}
-
-.wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    #myvideo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-//slide
-.swiper-container {
-    position: relative;
-    height: auto;
-    min-height: 300px;
-    overflow: hidden;
-    .swiper-slide {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 200ms linear;
-        transform: scale(0.8);
-        opacity: 0.7;
-        img {
-            width: 100%;
-        }
-        &.swiper-slide-active {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    .slide-desc {
-        display: block;
-        margin-top: 10px;
-        text-align: center;
-        p {
-            margin-bottom: 20px;
-        }
-    }
-    .swiper-btn {
-        position: absolute;
-        top: 0;
-        width: 30%;
-        height: 80%;
-        z-index: 10;
-
-        &.swiper-prev {
-            left: 0;
-        }
-        &.swiper-next {
-            right: 0;
-        }
-    }
-}
-
-//main
-.section-g {
+  .header-right-icons {
     display: flex;
-    flex-direction: column;
-    .sec-category {
-        a {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 100%;
-            }
-            .txt-category {
-                position: absolute;
-                color: white;
-                font-family: "Rufina", serif;
-                font-size: 5em;
-            }
-
-            &:hover {
-                img {
-                    opacity: 0.5;
-                }
-                .txt-category {
-                    color: black;
-                }
-            }
-        }
+    .btn-shopping::before {
+      font-size: 24px;
     }
+  }
 }
-// .section-history {
-//     position: relative;
-//     width: 100%;
-//     height: 100vh;
-//     background: #000;
-//     .sec-contents {
-//         display: flex;
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         a {
-//             width: 200px;
-//             height: 200px;
-//         }
-//         h2 {
-//             color: white;
-//             font-family: "Rufina", serif;
-//             font-size: 5.7143rem;
-//         }
-//         .txt-left {
-//             position: absolute;
-//             top: 50%;
-//             left: -50%;
-//             transform: translate(50%, -50%);
-//         }
-//         .txt-right {
-//             position: absolute;
-//             top: 50%;
-//             right: -30%;
-//             transform: translate(30%, -50%);
-//         }
-//     }
-// }
+
+.wrap {
+  // height: 3500px;
+  .product-search {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.more-title {
+  padding-top: 20px;
+  align-items: center;
+  max-width: 100%;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-top: 1px solid #dbdbdb;
+}
+@import "item-lst", "item-detail";
