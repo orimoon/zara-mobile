@@ -1,6 +1,3 @@
-@charset "UFT-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents";
-
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
@@ -13,52 +10,52 @@
 }
 
 // header
-#header {
-  position: relative;
-  z-index: 1000;
-  border-bottom: 1px solid $b;
-  .inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header__right {
-    display: flex;
-  }
-}
-#logo {
-  position: relative;
-  z-index: 1100;
-}
-.util__list {
-  display: flex;
-  li {
-    display: flex;
-  }
-  .btn-g,
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: $headerHeight;
-    .material-icons-outlined {
-      font-size: 26px;
-    }
-    &::before {
-      font-size: 20px;
-      font-family: "Font Awesome 6 Free";
-    }
-  }
-  // .btn-search::before {
-  //   content: "\f002";
-  //   font-weight: 900;
-  // }
-  // .btn-my::before {
-  //   content: "\f007";
-  //   font-weight: 400;
-  // }
-}
+// #header {
+//   position: relative;
+//   z-index: 1000;
+//   border-bottom: 1px solid $b;
+//   .inner {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+//   .header__right {
+//     display: flex;
+//   }
+// }
+// #logo {
+//   position: relative;
+//   z-index: 1100;
+// }
+// .util__list {
+//   display: flex;
+//   li {
+//     display: flex;
+//   }
+//   .btn-g,
+//   a {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 40px;
+//     height: $headerHeight;
+//     .material-icons-outlined {
+//       font-size: 26px;
+//     }
+//     &::before {
+//       font-size: 20px;
+//       font-family: "Font Awesome 6 Free";
+//     }
+//   }
+// .btn-search::before {
+//   content: "\f002";
+//   font-weight: 900;
+// }
+// .btn-my::before {
+//   content: "\f007";
+//   font-weight: 400;
+// }
+// }
 
 .gnb-wrap {
   .input-burger {
@@ -630,4 +627,7 @@ $timeline-container-width: 100%;
 #footer {
   margin-bottom: 200px;
   border-top: 10px solid $b;
+}
+.i {
+  display: flex;
 }

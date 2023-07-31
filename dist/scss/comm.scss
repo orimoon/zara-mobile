@@ -200,5 +200,7 @@
     color: #cccccc;
   }
 }
-
-@import "item-lst", "item-detail";
+.i {
+  display: flex;
+}
+@import "contents", "fashionhis", "item-lst", "item-detail";
