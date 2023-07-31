@@ -1,53 +1,3 @@
-#header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background: #fff;
-  z-index: 1000;
-  margin-bottom: 40px;
-  .row {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-  }
-  .header-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-  }
-  .header-left-icons {
-    display: flex;
-    .btn-g {
-      &:before {
-        font-size: 24px;
-        font-family: "Font Awesome 6 free";
-      }
-    }
-    .btn-menu::before {
-      content: "\f0c9";
-      font-weight: 900;
-    }
-  }
-
-  .header-right-icons {
-    display: flex;
-    .btn-g {
-      &:before {
-        font-family: "Line Awesome Free";
-      }
-    }
-    .btn-shopping::before {
-      font-size: 24px;
-      content: "\f290";
-      font-weight: 900;
-    }
-  }
-}
-
 .product-search {
   .h2-title {
     margin-bottom: 10px;
@@ -64,7 +14,7 @@
 }
 
 // 슬라이드메뉴
-.sticky {
+.sticky-tab {
   position: sticky;
   left: 0;
   top: 60px;
@@ -108,7 +58,7 @@
     background: #fff;
     line-height: 2rem;
     text-decoration: none;
-    color: $txtDefault;
+    color: #222;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
       rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     white-space: nowrap;
@@ -175,9 +125,9 @@
     text-align: center;
     li {
       position: relative;
-      width: calc(50% - $spacingList / 2);
-      margin-top: $spacingList;
-      margin-bottom: $spacingList;
+      width: calc(50% - 20px / 2);
+      margin-top: 20px;
+      margin-bottom: 20px;
       .thumb-shopping {
         position: relative;
         overflow: hidden;
@@ -191,7 +141,7 @@
           left: 0;
           right: 0;
           bottom: 0;
-          border: 1px solid rgba($b, 0.06);
+          border: 1px solid rgba(#000, 0.06);
         }
         img {
           position: absolute;

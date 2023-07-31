@@ -259,42 +259,6 @@ legend {
   padding: 0 20px;
 }
 
-#header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 1000;
-  margin-bottom: 40px;
-}
-#header .row {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-}
-#header .header-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-}
-#header .header-left-icons {
-  display: flex;
-}
-#header .header-left-icons .btn-g:before {
-  font-size: 24px;
-  font-family: "Font Awesome 6 free";
-}
-#header .header-right-icons {
-  display: flex;
-}
-#header .header-right-icons .btn-shopping::before {
-  font-size: 24px;
-}
-
 .wrap .product-search {
   text-align: center;
   font-size: 14px;
@@ -356,6 +320,120 @@ legend {
   font-weight: 900;
 }
 
+.footer-black {
+  background: #000;
+}
+
+.footer-inner {
+  margin-top: 100px;
+  color: white;
+}
+.footer-inner a {
+  color: #7e7e7e;
+}
+
+.footer-menu {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #323232;
+}
+
+.footer-info-col {
+  border-bottom: 1px solid #323232;
+}
+.footer-info-col li {
+  margin-bottom: 20px;
+}
+.footer-info-col a {
+  color: white;
+}
+
+.footer-acc-col {
+  margin: 0 auto;
+  padding: 0 0 20px;
+  width: 100%;
+}
+
+.footer-acc .footer-acc-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.footer-acc .footer-acc-title:after {
+  content: "+";
+  font-weight: 900;
+  font-family: "Font Awesome 6 free";
+  position: absolute;
+  right: 0px;
+  font-size: 16px;
+  transform: translateY(-50%);
+  transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.25s linear;
+}
+
+.footer-acc.active .footer-acc-title:after {
+  content: "\f068";
+  transform: rotate(180deg);
+}
+
+.footer-acc-cont {
+  margin-bottom: 10px;
+}
+.footer-acc-cont p {
+  border-bottom: 1px solid #323232;
+  padding-bottom: 20px;
+}
+
+.footer-acc-cont * {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.footer-sns ul {
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer-sns li {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.footer-nation-wrap {
+  cursor: pointer;
+}
+.footer-nation-wrap a::before {
+  content: "\f3c5";
+  font-weight: 900;
+  font-family: "Font Awesome 6 free";
+  margin-right: 10px;
+}
+
+.foot-copyright {
+  color: #7e7e7e;
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+
+.footer-terms-col {
+  margin-bottom: 40px;
+}
+.footer-terms-col li {
+  margin: 0 0 20px 0;
+}
+
+.footer-korean-legal {
+  color: #7e7e7e;
+  padding-bottom: 40px;
+  font-size: 12px;
+}
+.footer-korean-legal a {
+  text-decoration: underline;
+  color: #cccccc;
+}
+
 .product-search .h2-title {
   margin-bottom: 10px;
 }
@@ -371,7 +449,7 @@ legend {
   width: 100%;
 }
 
-.sticky {
+.sticky-tab {
   position: sticky;
   left: 0;
   top: 60px;
@@ -581,51 +659,6 @@ legend {
   right: 3%;
   opacity: 0.8;
   font-size: 30px;
-}
-
-#header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background: #fff;
-  z-index: 1000;
-  margin-bottom: 40px;
-}
-#header .row {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-}
-#header .header-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-}
-#header .header-left-icons {
-  display: flex;
-}
-#header .header-left-icons .btn-g:before {
-  font-size: 24px;
-  font-family: "Font Awesome 6 free";
-}
-#header .header-left-icons .btn-before::before {
-  content: "\f053";
-  font-weight: 900;
-}
-#header .header-right-icons {
-  display: flex;
-}
-#header .header-right-icons .btn-g:before {
-  font-family: "Font Awesome 6 Free";
-}
-#header .header-right-icons .btn-shopping::before {
-  font-size: 24px;
-  content: "\f002";
-  font-weight: 900;
 }
 
 .product-banner {
@@ -886,143 +919,4 @@ legend {
 
 .product-price {
   padding-top: 12px;
-}
-
-.footer-black {
-  background: #000;
-}
-
-.footer-inner {
-  margin-top: 100px;
-  color: white;
-}
-.footer-inner a {
-  color: #7e7e7e;
-}
-
-.footer-menu {
-  padding-top: 40px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #323232;
-}
-
-.footer-info-col {
-  border-bottom: 1px solid #323232;
-}
-.footer-info-col li {
-  margin-bottom: 20px;
-}
-.footer-info-col a {
-  color: white;
-}
-
-.footer-acc-col {
-  margin: 0 auto;
-  padding: 0 0 20px;
-  width: 100%;
-}
-
-.footer-acc .footer-acc-title {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  position: relative;
-}
-
-.footer-acc .footer-acc-title:after {
-  content: "+";
-  font-weight: 900;
-  font-family: "Font Awesome 6 free";
-  position: absolute;
-  right: 0px;
-  font-size: 16px;
-  transform: translateY(-50%);
-  transform: rotate(90deg);
-  -webkit-transition: -webkit-transform 0.25s linear;
-}
-
-.footer-acc.active .footer-acc-title:after {
-  content: "\f068";
-  transform: rotate(180deg);
-}
-
-.footer-acc-cont {
-  margin-bottom: 10px;
-}
-.footer-acc-cont p {
-  border-bottom: 1px solid #323232;
-  padding-bottom: 20px;
-}
-
-.footer-acc-cont * {
-  margin-top: 0;
-  line-height: 1.5;
-}
-
-.footer-sns ul {
-  display: flex;
-  margin-bottom: 40px;
-}
-.footer-sns li {
-  margin-right: 15px;
-  font-size: 24px;
-}
-
-.footer-nation-wrap .input-nation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-.footer-nation-wrap .input-nation:checked ~ #nationNav {
-  top: 0%;
-}
-.footer-nation-wrap .label-nation {
-  cursor: pointer;
-  position: relative;
-  z-index: 1100;
-  display: flex;
-  margin-bottom: 20px;
-}
-.footer-nation-wrap .label-nation span::before {
-  content: "\f3c5";
-  font-weight: 900;
-  font-family: "Font Awesome 6 free";
-  margin-right: 10px;
-}
-.footer-nation-wrap #nationNav {
-  position: fixed;
-  top: 100%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 50px;
-  background: lightgreen;
-  transition: all 0.3s;
-}
-
-.foot-copyright {
-  color: #7e7e7e;
-  font-size: 12px;
-  margin-bottom: 40px;
-}
-
-.footer-terms-col {
-  margin-bottom: 40px;
-}
-.footer-terms-col li {
-  margin: 0 0 20px 0;
-}
-
-.footer-korean-legal {
-  color: #7e7e7e;
-  padding-bottom: 40px;
-  font-size: 12px;
-}
-.footer-korean-legal a {
-  text-decoration: underline;
-  color: #cccccc;
 }/*# sourceMappingURL=comm.css.map */
