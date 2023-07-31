@@ -287,8 +287,43 @@ legend {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 70px;
+  justify-content: center;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+.swiper-container .swiper-slide img {
+  width: 100%;
+}
+.swiper-container .swiper-slide.swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+.swiper-container .slide-desc {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+.swiper-container .slide-desc p {
+  margin-bottom: 20px;
+}
+.swiper-container .swiper-btn {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 80%;
+  z-index: 10;
+}
+.swiper-container .swiper-btn.swiper-prev {
+  left: 0;
+}
+.swiper-container .swiper-btn.swiper-next {
+  right: 0;
+}
+
+.section-g {
+  display: flex;
+  flex-direction: column;
 }
 #header .header-logo {
   position: absolute;
@@ -310,6 +345,8 @@ legend {
 }
 #header .header-right-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #header .header-right-icons .btn-g:before {
   font-family: "Line Awesome Free";
