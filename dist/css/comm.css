@@ -453,7 +453,7 @@ legend {
   position: sticky;
   left: 0;
   top: 60px;
-  z-index: 1000;
+  z-index: 900;
 }
 
 .sorting {
