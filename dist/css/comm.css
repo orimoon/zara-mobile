@@ -544,13 +544,12 @@ legend {
   position: relative;
 }
 .section-history .sec-contents {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  line-height: 100vh;
+  position: relative;
 }
 .section-history .sec-contents img {
-  position: relative;
   width: 300px;
 }
 .section-history .sec-contents .con-txt {
@@ -560,12 +559,11 @@ legend {
 }
 .section-history .sec-contents .txt-left {
   position: absolute;
-  top: 0;
+  top: -140px;
   left: 0;
 }
 .section-history .sec-contents .txt-right {
   position: absolute;
-  bottom: 20%;
-  right: -30%;
-  transition: translate(-20%, 0);
+  top: 0;
+  right: 0;
 }/*# sourceMappingURL=comm.css.map */
