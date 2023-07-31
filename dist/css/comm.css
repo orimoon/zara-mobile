@@ -435,6 +435,10 @@ legend {
   color: #cccccc;
 }
 
+.i {
+  display: flex;
+}
+
 .cart-tit {
   display: flex;
   justify-content: center;
@@ -1110,6 +1114,10 @@ a:focus {
 #footer {
   margin-bottom: 200px;
   border-top: 10px solid #000;
+}
+
+.i {
+  display: flex;
 }
 
 .product-search .h2-title {
