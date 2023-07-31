@@ -18,7 +18,31 @@ $(document).ready(function () {
     });
 });
 
-//장바구니 스와이퍼
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".txt-left", {
+    x: 0,
+    scrollTrigger: {
+        trigger: ".sec-contents",
+        scrub: true,
+    },
+});
+gsap.to(".txt-right", {
+    x: 0,
+    scrollTrigger: {
+        markers: true,
+        trigger: ".sec-contents",
+        scrub: true,
+    },
+});
+gsap.to(".sec-contents img", {
+    scale: 5,
+    scrollTrigger: {
+        markers: true,
+        trigger: ".sec-contents",
+        scrub: true,
+    },
+});
 
 var swiper2 = new Swiper(".swiper-container2", {
     pagination: ".swiper-pagination",

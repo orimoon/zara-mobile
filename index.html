@@ -30,7 +30,17 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.js"></script>
+        <!-- 스크롤트리거 -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
         <script defer src="./dist/js/comm.js"></script>
+        <script defer src="./dist/js/include.js"></script>
     </head>
     <body>
         <div id="u-skip">
@@ -39,27 +49,7 @@
             <a href="#footer"><span>풋터 바로가기</span></a>
         </div>
         <div class="wrap">
-            <header id="header" class="container">
-                <div class="inner">
-                    <h1 id="logo">
-                        <a href="#"><img src="./images/comm/logo-fendi.png" alt="펜디로고" /></a>
-                    </h1>
-                    <div class="util">
-                        <ul class="lst-util">
-                            <li>
-                                <button class="btn-g btn-ham">
-                                    <span class="blind">전체메뉴바</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn-g btn-my">
-                                    <span class="blind">마이페이지</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
+            <header data-include-path="./outline/header.html"></header>
             <div class="wrapper">
                 <video muted autoplay loop id="myvideo">
                     <source src="./images/contents/FendiSS23newarrivalsforher.mp4" type="video/mp4" />
@@ -110,34 +100,34 @@
                     <div class="sec-category sec-woman">
                         <a href="#"
                             ><img src="images\contents\2023-06-04-couture-003-4x4.jpg" alt="woman" />
-                            <span class="txt-category">WOMAN</span></a
+                            <span class="txt-category fade-in">WOMAN</span></a
                         >
                     </div>
                     <div class="sec-category sec-man">
                         <a href="#"
                             ><img src="images\contents\fendiss24-day1-0039-1-jpeg-web.jpg" alt="man" />
-                            <span class="txt-category">MAN</span></a
+                            <span class="txt-category fade-in">MAN</span></a
                         >
                     </div>
                     <div class="sec-category sec-shoes">
                         <a href="#"
                             ><img src="images\contents\40-c.jpg" alt="shoes" />
-                            <span class="txt-category">SHOES</span></a
+                            <span class="txt-category fade-in">SHOES</span></a
                         >
                     </div>
                 </section>
                 <section class="section-g section-history">
                     <h2 class="sec-tit blind">history</h2>
                     <div class="sec-contents">
-                        <a href="#"
-                            ><img src="images\contents\1-1-.jpg" alt="Fendi" />
-                            <h2 class="txt-left">Fendi</h2>
-                            <h2 class="txt-right">history</h2>
+                        <a href="#">
+                            <img src="images\contents\1-1-.jpg" alt="Fendi" />
+                            <div class="con-txt txt-left">Fendi</div>
+                            <div class="con-txt txt-right">history</div>
                         </a>
                     </div>
                 </section>
             </main>
-            <footer id="footer" class="container">풋터!</footer>
+            <footer data-include-path="./outline/footer.html"></footer>
         </div>
     </body>
 </html>
