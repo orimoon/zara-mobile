@@ -319,8 +319,6 @@ legend {
   font-size: 24px;
   content: "\f290";
   font-weight: 900;
-<<<<<<< HEAD
-=======
 }
 
 .footer-black {
@@ -435,10 +433,6 @@ legend {
 .footer-korean-legal a {
   text-decoration: underline;
   color: #cccccc;
-}
-
-.i {
-  display: flex;
 }
 
 .cart-tit {
@@ -873,7 +867,6 @@ a:focus {
   text-align: center;
   padding: 0 0 75px;
   overflow: hidden;
->>>>>>> pr/orimoon/5
 }
 
 .fp-slider-wrapper {
@@ -1117,10 +1110,6 @@ a:focus {
 #footer {
   margin-bottom: 200px;
   border-top: 10px solid #000;
-}
-
-.i {
-  display: flex;
 }
 
 .product-search .h2-title {
