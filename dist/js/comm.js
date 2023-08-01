@@ -17,6 +17,12 @@ $(document).ready(function () {
         },
     });
 });
+var swiper2 = new Swiper(".swiper-container2", {
+    pagination: ".swiper-pagination",
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+});
 
 // 스크롤트리거
 gsap.registerPlugin(ScrollTrigger);
@@ -41,11 +47,4 @@ gsap.to(".sec-contents img", {
         trigger: ".sec-contents",
         scrub: true,
     },
-});
-
-var swiper2 = new Swiper(".swiper-container2", {
-    pagination: ".swiper-pagination",
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
 });
