@@ -13,7 +13,6 @@
     height: 60vh;
     text-align: center;
     font-size: 18px;
-    background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,15 +46,27 @@
   .item-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-size: 18px;
+    }
   }
 }
 
 .item-detail-cont {
   margin: 10px 0;
+  font-size: 16px;
 }
 
 .item-detail__option {
   border-top: 1px solid #dbdbdb;
+  .option-tag {
+    display: flex;
+    align-items: center;
+  }
+  p {
+    margin-right: 5px;
+  }
 }
 // color picker
 .option-tag {
@@ -132,15 +143,15 @@
     }
 
     &--color1 {
-      background: #4777af;
+      background: #eecaca;
     }
 
     &--color2 {
-      background: #90cdf0;
+      background: #bd7f7f;
     }
 
     &--color3 {
-      background: #46b064;
+      background: #984d4d;
     }
 
     &--color4 {
@@ -171,17 +182,24 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  .sub-info {
+    margin-bottom: 20px;
+    strong {
+      display: block;
+      margin: 5px 0;
+      text-decoration: underline;
+    }
+  }
 }
 
 .accordion .link {
-  cursor: pointer;
-  display: block;
-  padding: 15px 15px 15px 0px;
-  color: #4d4d4d;
-  font-size: 14px;
-  font-weight: 700;
-  border-bottom: 1px solid #ccc;
   position: relative;
+  cursor: pointer;
+  padding: 20px 0px;
+  font-size: 16px;
+  font-weight: 700;
+  border-top: 1px solid #dbdbdb;
+  color: #4d4d4d;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -193,8 +211,9 @@
 
 .accordion li i {
   position: absolute;
-  top: 16px;
+  top: 50%;
   left: 12px;
+  transform: translateY(-50%);
   font-size: 18px;
   color: #595959;
   -webkit-transition: all 0.4s ease;
@@ -249,8 +268,13 @@
 .recommend-item__title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+  h4 {
+    font-size: 16px;
+    color: #4d4d4d;
+  }
 }
 .recommend-item__products-lst {
   overflow-y: hidden;
