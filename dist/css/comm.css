@@ -401,37 +401,34 @@ legend {
   font-size: 24px;
 }
 
-.footer-nation-wrap {
-  cursor: pointer;
+.section-history {
+  background: black;
+  height: 100vh;
+  position: relative;
 }
-.footer-nation-wrap a::before {
-  content: "\f3c5";
-  font-weight: 900;
-  font-family: "Font Awesome 6 free";
-  margin-right: 10px;
+.section-history .sec-contents {
+  display: flex;
+  justify-content: center;
+  line-height: 100vh;
+  position: relative;
 }
-
-.foot-copyright {
-  color: #7e7e7e;
-  font-size: 12px;
-  margin-bottom: 40px;
+.section-history .sec-contents img {
+  width: 300px;
 }
-
-.footer-terms-col {
-  margin-bottom: 40px;
+.section-history .sec-contents .con-txt {
+  font-size: 5.7143rem;
+  color: #ffffff;
+  font-family: "Rufina", serif;
 }
-.footer-terms-col li {
-  margin: 0 0 20px 0;
+.section-history .sec-contents .txt-left {
+  position: absolute;
+  top: -140px;
+  left: 0;
 }
-
-.footer-korean-legal {
-  color: #7e7e7e;
-  padding-bottom: 40px;
-  font-size: 12px;
-}
-.footer-korean-legal a {
-  text-decoration: underline;
-  color: #cccccc;
+.section-history .sec-contents .txt-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .product-search .h2-title {

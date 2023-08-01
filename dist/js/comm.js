@@ -18,27 +18,26 @@ $(document).ready(function () {
     });
 });
 
+// 스크롤트리거
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".txt-left", {
-    x: 0,
+    x: 200,
     scrollTrigger: {
         trigger: ".sec-contents",
         scrub: true,
     },
 });
 gsap.to(".txt-right", {
-    x: 0,
+    x: -200,
     scrollTrigger: {
-        markers: true,
         trigger: ".sec-contents",
         scrub: true,
     },
 });
 gsap.to(".sec-contents img", {
-    scale: 5,
+    scale: 4,
     scrollTrigger: {
-        markers: true,
         trigger: ".sec-contents",
         scrub: true,
     },

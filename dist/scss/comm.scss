@@ -165,39 +165,34 @@
         font-size: 24px;
     }
 }
+.section-history {
+    background: black;
+    height: 100vh;
+    position: relative;
+    .sec-contents {
+        display: flex;
+        justify-content: center;
+        line-height: 100vh;
+        position: relative;
 
-// 국가선택
-
-.footer-nation-wrap {
-    cursor: pointer;
-    a::before {
-        content: "\f3c5";
-        font-weight: 900;
-        font-family: "Font Awesome 6 free";
-        margin-right: 10px;
-    }
-}
-
-.foot-copyright {
-    color: #7e7e7e;
-    font-size: 12px;
-    margin-bottom: 40px;
-}
-
-.footer-terms-col {
-    margin-bottom: 40px;
-    li {
-        margin: 0 0 20px 0;
-    }
-}
-
-.footer-korean-legal {
-    color: #7e7e7e;
-    padding-bottom: 40px;
-    font-size: 12px;
-    a {
-        text-decoration: underline;
-        color: #cccccc;
+        img {
+            width: 300px;
+        }
+        .con-txt {
+            font-size: 5.7143rem;
+            color: #ffffff;
+            font-family: "Rufina", serif;
+        }
+        .txt-left {
+            position: absolute;
+            top: -140px;
+            left: 0;
+        }
+        .txt-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 }
 
