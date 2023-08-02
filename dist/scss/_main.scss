@@ -93,45 +93,16 @@
         }
     }
 }
-.section-history {
-    background: black;
-    height: 100vh;
-    position: relative;
-    .sec-contents {
-        display: flex;
-        justify-content: center;
-        line-height: 100vh;
-        position: relative;
 
-        img {
-            width: 300px;
-        }
-        .con-txt {
-            font-size: 5.7143rem;
-            color: #ffffff;
-            font-family: "Rufina", serif;
-        }
-        .txt-left {
-            position: absolute;
-            top: -140px;
-            left: 0;
-        }
-        .txt-right {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
-}
 .section-history {
     background: black;
     height: 100vh;
     position: relative;
+    overflow: hidden;
     .sec-contents {
         display: flex;
         justify-content: center;
         line-height: 100vh;
-        position: relative;
 
         img {
             width: 300px;
