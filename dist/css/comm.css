@@ -309,6 +309,17 @@ legend {
   display: flex;
 }
 #header .header-right-icons .btn-g:before {
+  font-family: "Line Awesome Free";
+}
+#header .header-right-icons .btn-shopping::before {
+  font-size: 24px;
+  content: "\f290";
+  font-weight: 900;
+}
+#header .header-right-icons {
+  display: flex;
+}
+#header .header-right-icons .btn-g:before {
   font-size: 24px;
   font-family: "Line Awesome Free";
 }
@@ -423,7 +434,7 @@ legend {
 }
 
 .footer-inner {
-  margin-top: 60px;
+  margin-top: 100px;
   color: white;
 }
 .footer-inner a {
@@ -497,6 +508,39 @@ legend {
 .footer-sns li {
   margin-right: 15px;
   font-size: 24px;
+}
+
+.footer-nation-wrap {
+  cursor: pointer;
+}
+.footer-nation-wrap a::before {
+  content: "\f3c5";
+  font-weight: 900;
+  font-family: "Font Awesome 6 free";
+  margin-right: 10px;
+}
+
+.foot-copyright {
+  color: #7e7e7e;
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+
+.footer-terms-col {
+  margin-bottom: 40px;
+}
+.footer-terms-col li {
+  margin: 0 0 20px 0;
+}
+
+.footer-korean-legal {
+  color: #7e7e7e;
+  padding-bottom: 40px;
+  font-size: 12px;
+}
+.footer-korean-legal a {
+  text-decoration: underline;
+  color: #cccccc;
 }
 
 .video-wrap {
