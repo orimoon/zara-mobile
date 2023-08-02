@@ -17,12 +17,34 @@ $(document).ready(function () {
         },
     });
 });
-
-//장바구니 스와이퍼
-
 var swiper2 = new Swiper(".swiper-container2", {
     pagination: ".swiper-pagination",
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
+});
+
+// 스크롤트리거
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".txt-left", {
+    x: 200,
+    scrollTrigger: {
+        trigger: ".sec-contents",
+        scrub: true,
+    },
+});
+gsap.to(".txt-right", {
+    x: -200,
+    scrollTrigger: {
+        trigger: ".sec-contents",
+        scrub: true,
+    },
+});
+gsap.to(".sec-contents img", {
+    scale: 4,
+    scrollTrigger: {
+        trigger: ".sec-contents",
+        scrub: true,
+    },
 });
