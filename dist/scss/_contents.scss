@@ -90,41 +90,44 @@
             &:last-child {
                 border-top: 2px solid #000000;
                 padding-top: 12px;
-                font-size: 20px;
+                font-size: 16px;
             }
         }
     }
 }
 
-.rec-slide-wrap {
-    margin-top: 15px;
-    display: flex;
+.swiper-container2 {
+    overflow-y: hidden;
+    .rec-slide-wrap {
+        margin-top: 15px;
+        display: flex;
 
-    .slide-cart-img {
-        position: relative;
-        overflow: hidden;
-        font-size: 18px;
-        background: #fff;
-        &::before {
-            content: "";
-            display: block;
-            height: 0;
-            padding-top: 100%;
+        .slide-cart-img {
+            position: relative;
+            overflow: hidden;
+            font-size: 18px;
+            background: #fff;
+            &::before {
+                content: "";
+                display: block;
+                height: 0;
+                padding-top: 100%;
+            }
+            img {
+                display: block;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+            }
         }
-        img {
-            display: block;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
+        .text-wrap {
+            margin-top: 10px;
         }
-    }
-    .text-wrap {
-        margin-top: 10px;
     }
 }
 .swiper-slide {

@@ -436,6 +436,11 @@ legend {
 .footer-inner {
   margin-top: 100px;
   color: white;
+  margin-top: 60px;
+  color: white;
+}
+.footer-inner a {
+  color: #7e7e7e;
 }
 .footer-inner a {
   color: #7e7e7e;
@@ -634,42 +639,12 @@ legend {
   background: black;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .section-history .sec-contents {
   display: flex;
   justify-content: center;
   line-height: 100vh;
-  position: relative;
-}
-.section-history .sec-contents img {
-  width: 300px;
-}
-.section-history .sec-contents .con-txt {
-  font-size: 5.7143rem;
-  color: #ffffff;
-  font-family: "Rufina", serif;
-}
-.section-history .sec-contents .txt-left {
-  position: absolute;
-  top: -140px;
-  left: 0;
-}
-.section-history .sec-contents .txt-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.section-history {
-  background: black;
-  height: 100vh;
-  position: relative;
-}
-.section-history .sec-contents {
-  display: flex;
-  justify-content: center;
-  line-height: 100vh;
-  position: relative;
 }
 .section-history .sec-contents img {
   width: 300px;
@@ -788,26 +763,29 @@ legend {
 .box-total ul li:last-child {
   border-top: 2px solid #000000;
   padding-top: 12px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.rec-slide-wrap {
+.swiper-container2 {
+  overflow-y: hidden;
+}
+.swiper-container2 .rec-slide-wrap {
   margin-top: 15px;
   display: flex;
 }
-.rec-slide-wrap .slide-cart-img {
+.swiper-container2 .rec-slide-wrap .slide-cart-img {
   position: relative;
   overflow: hidden;
   font-size: 18px;
   background: #fff;
 }
-.rec-slide-wrap .slide-cart-img::before {
+.swiper-container2 .rec-slide-wrap .slide-cart-img::before {
   content: "";
   display: block;
   height: 0;
   padding-top: 100%;
 }
-.rec-slide-wrap .slide-cart-img img {
+.swiper-container2 .rec-slide-wrap .slide-cart-img img {
   display: block;
   top: 0;
   left: 0;
@@ -819,7 +797,7 @@ legend {
      object-fit: cover;
   position: absolute;
 }
-.rec-slide-wrap .text-wrap {
+.swiper-container2 .rec-slide-wrap .text-wrap {
   margin-top: 10px;
 }
 

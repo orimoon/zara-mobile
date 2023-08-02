@@ -132,6 +132,11 @@
     justify-content: center;
     line-height: 100vh;
     position: relative;
+    overflow: hidden;
+    .sec-contents {
+        display: flex;
+        justify-content: center;
+        line-height: 100vh;
 
     img {
       width: 300px;
