@@ -831,6 +831,12 @@ legend {
 .swiper-container2 .rec-slide-wrap .text-wrap {
   margin-top: 10px;
 }
+.swiper-container2 .rec-slide-wrap .text-wrap .txt-shopping_tit {
+  font-size: 12px;
+}
+.swiper-container2 .rec-slide-wrap .text-wrap .txt-shopping_price {
+  font-size: 10px;
+}
 
 .swiper-slide strong {
   font-weight: normal;
@@ -838,6 +844,10 @@ legend {
 }
 .swiper-slide p {
   margin-top: 6px;
+}
+
+.swiper-slide strong {
+  overflow: hidden;
 }
 
 #video_area {

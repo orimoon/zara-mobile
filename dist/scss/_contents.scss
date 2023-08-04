@@ -127,6 +127,12 @@
         }
         .text-wrap {
             margin-top: 10px;
+            .txt-shopping_tit {
+                font-size: 12px;
+            }
+            .txt-shopping_price {
+                font-size: 10px;
+            }
         }
     }
 }
@@ -138,4 +144,7 @@
     p {
         margin-top: 6px;
     }
+}
+.swiper-slide strong {
+    overflow: hidden;
 }
