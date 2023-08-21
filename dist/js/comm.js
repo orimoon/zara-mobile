@@ -18,7 +18,6 @@ $(document).ready(function () {
     });
 });
 var swiper2 = new Swiper(".swiper-container2", {
-    pagination: ".swiper-pagination",
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
