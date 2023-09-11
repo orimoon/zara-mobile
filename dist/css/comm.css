@@ -575,7 +575,7 @@ legend {
   width: 100%;
 }
 .swiper-container .swiper-slide.swiper-slide-active {
-  transform: scale(1.8);
+  transform: scale(1.2);
   opacity: 1;
 }
 .swiper-container .slide-desc {
