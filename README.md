@@ -1,7 +1,17 @@
-# list
+# FENDI 리뉴얼
 
-https://eehd80.github.io/fendi/!list.html
+## 사이트 url
 
-## main
+- list : https://eehd80.github.io/fendi/!list.html
+- main : https://eehd80.github.io/fendi/
+-
 
-https://eehd80.github.io/fendi/
+## 참여인원 & 역할
+
+3명 (홍길동, 홍동길, 길동홍)
+
+- 홍길동 :
+- 홍동길 :
+- 길동홍 :
+
+## 참여인원
