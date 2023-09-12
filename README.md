@@ -19,16 +19,15 @@
 
 ## 사용기술
 
-### - figma
+- figma
+    - https://www.figma.com/file/6gxADeRdgSy4WJcbzh6X3D/Fendi-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0%3A1&mode=design&t=s5bkU3IHWilrUn1l-1
 
-    https://www.figma.com/file/6gxADeRdgSy4WJcbzh6X3D/Fendi-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0%3A1&mode=design&t=s5bkU3IHWilrUn1l-1
+- html, scss(css), javascript
 
-### - html, scss(css), javascript
+- 사용 라이브러리
 
-### - 사용 라이브러리
+    - swiper.js, gsap
 
-  #### swiper.js, gsap
+- GitHub history
 
-### - GitHub history
-
-<img width="1114" alt="image" src="https://github.com/oodada/fendi/assets/10627436/9643587b-a145-4c71-883c-0ee30e6449da">
+    - <img width="1114" alt="image" src="https://github.com/oodada/fendi/assets/10627436/9643587b-a145-4c71-883c-0ee30e6449da">
