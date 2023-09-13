@@ -2,7 +2,9 @@
 
 ## 사이트맵
 
-- 인트로 : /fendi/
+ddd
+
+- 인트로 : ./fendi/
 - 상품 리스트 : https://oddodd.me/fendi/item-lst.html
 - 상품 상세보기 : https://oddodd.me/fendi/item.html
 - 장바구니 : https://oddodd.me/fendi/cart.html
