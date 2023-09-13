@@ -1,5 +1,8 @@
 # JARA 리뉴얼
 
+# link define
+[Google]: http://google.com/ 
+
 ## 사이트맵
 
 - 인트로 : <a href="https://oddodd.io/fendi/" target="_blank">https://oddodd.io/fendi/</a>
