@@ -20,7 +20,7 @@
 ## 사용기술
 
 - figma 링크
-  - https://www.figma.com/file/6gxADeRdgSy4WJcbzh6X3D/Fendi-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0%3A1&mode=design&t=s5bkU3IHWilrUn1l-1
+  - <a href="https://www.figma.com/file/6gxADeRdgSy4WJcbzh6X3D/Fendi-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0%3A1&mode=design&t=s5bkU3IHWilrUn1l-1" target="_blank">JARA Figma Design</a>
 
 - html, scss(css), javascript, jQuery
 
