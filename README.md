@@ -1,15 +1,13 @@
-# FENDI 리뉴얼
+# JARA 리뉴얼
 
 ## 사이트맵
 
-ddd
-
-- 인트로 : <a href="index.html" target="_blank">intro</a>
-- 상품 리스트 : https://oddodd.me/fendi/item-lst.html
-- 상품 상세보기 : https://oddodd.me/fendi/item.html
-- 장바구니 : https://oddodd.me/fendi/cart.html
-- 패션쇼 : https://oddodd.me/fendi/fahionshow.html
-- 브랜드 역사 : https://oddodd.me/fendi/history.html
+- 인트로 : <a href="https://oddodd.io/fendi/" target="_blank">https://oddodd.io/fendi/</a>
+- 상품 리스트 : <a href="https://oddodd.io/fendi/item-lst.html" target="_blank">https://oddodd.io/fendi/item-lst.html</a>
+- 상품 상세보기 : <a href="https://oddodd.io/fendi/item.html" target="_blank">https://oddodd.io/fendi/item.html</a>
+- 장바구니 : <a href="https://oddodd.io/fendi/cart.html" target="_blank">https://oddodd.io/fendi/cart.html</a>
+- 패션쇼 : <a href="https://oddodd.io/fendi/fahionshow.html" target="_blank">https://oddodd.io/fendi/fahionshow.html</a>
+- 브랜드 역사 : <a href="https://oddodd.io/fendi/history.html" target="_blank">https://oddodd.io/fendi/history.html</a>
 
 ## 참여인원 & 역할
 
@@ -21,15 +19,16 @@ ddd
 
 ## 사용기술
 
-- figma
-    - https://www.figma.com/file/6gxADeRdgSy4WJcbzh6X3D/Fendi-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0%3A1&mode=design&t=s5bkU3IHWilrUn1l-1
+- figma 링크
+  - https://www.figma.com/file/6gxADeRdgSy4WJcbzh6X3D/Fendi-%EB%A6%AC%EB%89%B4%EC%96%BC?type=design&node-id=0%3A1&mode=design&t=s5bkU3IHWilrUn1l-1
 
-- html, scss(css), javascript
+- html, scss(css), javascript, jQuery
 
-- 사용 라이브러리
+- library
 
-    - swiper.js, gsap
+  - swiper.js
+  - gsap
 
-- GitHub history
-
-    - <img width="1114" alt="image" src="https://github.com/oodada/fendi/assets/10627436/9643587b-a145-4c71-883c-0ee30e6449da">
+- github commit
+  - https://github.com/oodada/fendi/commits/main
+  - <img width="1114" alt="image" src="https://github.com/oodada/fendi/assets/10627436/9643587b-a145-4c71-883c-0ee30e6449da">
