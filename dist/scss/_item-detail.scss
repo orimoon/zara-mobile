@@ -95,7 +95,7 @@
     &:checked {
       + .color-picker__color {
         &:after {
-          content: '';
+          content: "";
         }
       }
     }
@@ -183,10 +183,13 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
   .sub-info {
+    display: none;
     margin-bottom: 20px;
+    font-weight: 400;
+    color: #7e7e7e;
     strong {
       display: block;
-      margin: 5px 0;
+      margin: 10px 0px;
       text-decoration: underline;
     }
   }
@@ -211,9 +214,8 @@
 
 .accordion li i {
   position: absolute;
-  top: 50%;
+  top: 24px;
   left: 12px;
-  transform: translateY(-50%);
   font-size: 18px;
   color: #595959;
   -webkit-transition: all 0.4s ease;
@@ -274,6 +276,9 @@
   h4 {
     font-size: 16px;
     color: #4d4d4d;
+  }
+  .btn-more {
+    font-weight: 400;
   }
 }
 .recommend-item__products-lst {

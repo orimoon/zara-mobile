@@ -118,6 +118,35 @@
   }
 }
 
+.instock {
+  position: relative;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    &:checked {
+      & + label {
+        &::before {
+          content: "\f45c";
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          padding-right: 2px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  label {
+    &::before {
+      content: "\f04d";
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      padding-right: 2px;
+      font-size: 16px;
+    }
+  }
+}
 .sec-shopping {
   .lst-shopping {
     display: flex;
@@ -196,6 +225,11 @@
       display: block;
       font-size: 14px;
       white-space: nowrap;
+    }
+    .txt-option {
+      padding: 3px;
+      font-size: 14px;
+      color: #7e7e7e;
     }
     .txt-shopping__desc {
       padding: 3px;
