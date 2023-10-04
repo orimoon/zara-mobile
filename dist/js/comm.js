@@ -1,8 +1,6 @@
 $(document).ready(function () {
     // Assign some jquery elements we'll need
     var $swiper = $(".swiper-container");
-    var $bottomSlide = null;
-    var $bottomSlideContent = null;
 
     var mySwiper = new Swiper(".swiper-container", {
         spaceBetween: 30,
