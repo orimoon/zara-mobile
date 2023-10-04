@@ -891,7 +891,7 @@ legend {
   color: #fff;
 }
 
-.fendi {
+.ZARA {
   font-size: 112px;
   font-style: normal;
   font-weight: 900;
@@ -1461,6 +1461,30 @@ a:focus {
   font-weight: 900;
 }
 
+.instock {
+  position: relative;
+}
+.instock input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.instock input:checked + label::before {
+  content: "\f45c";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  padding-right: 2px;
+  font-size: 16px;
+}
+.instock label::before {
+  content: "\f04d";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  padding-right: 2px;
+  font-size: 16px;
+}
+
 .sec-shopping .lst-shopping {
   display: flex;
   flex-wrap: wrap;
@@ -1526,6 +1550,11 @@ a:focus {
   display: block;
   font-size: 14px;
   white-space: nowrap;
+}
+.sec-shopping .txt-shopping .txt-option {
+  padding: 3px;
+  font-size: 14px;
+  color: #7e7e7e;
 }
 .sec-shopping .txt-shopping .txt-shopping__desc {
   padding: 3px;
@@ -1720,11 +1749,14 @@ a:focus {
   border-radius: 4px;
 }
 .accordion .sub-info {
+  display: none;
   margin-bottom: 20px;
+  font-weight: 400;
+  color: #7e7e7e;
 }
 .accordion .sub-info strong {
   display: block;
-  margin: 5px 0;
+  margin: 10px 0px;
   text-decoration: underline;
 }
 
@@ -1745,9 +1777,8 @@ a:focus {
 
 .accordion li i {
   position: absolute;
-  top: 50%;
+  top: 24px;
   left: 12px;
-  transform: translateY(-50%);
   font-size: 18px;
   color: #595959;
   transition: all 0.4s ease;
@@ -1800,6 +1831,9 @@ a:focus {
 .recommend-item__title h4 {
   font-size: 16px;
   color: #4d4d4d;
+}
+.recommend-item__title .btn-more {
+  font-weight: 400;
 }
 
 .recommend-item__products-lst {
