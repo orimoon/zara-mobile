@@ -2,12 +2,12 @@
 
 ## 사이트맵
 
--   인트로 : <a href="https://oddodd.io/ZARA/" target="_blank">https://oddodd.io/ZARA/</a>
--   상품 리스트 : <a href="https://oddodd.io/ZARA/item-lst.html" target="_blank">https://oddodd.io/ZARA/item-lst.html</a>
--   상품 상세보기 : <a href="https://oddodd.io/ZARA/item.html" target="_blank">https://oddodd.io/ZARA/item.html</a>
--   장바구니 : <a href="https://oddodd.io/ZARA/cart.html" target="_blank">https://oddodd.io/ZARA/cart.html</a>
--   패션쇼 : <a href="https://oddodd.io/ZARA/fahionshow.html" target="_blank">https://oddodd.io/ZARA/fahionshow.html</a>
--   브랜드 역사 : <a href="https://oddodd.io/ZARA/history.html" target="_blank">https://oddodd.io/ZARA/history.html</a>
+-   인트로 : <a href="https://oridal.me/zara-mobile/" target="_blank">https://oridal.me/ZARA/</a>
+-   상품 리스트 : <a href="https://oridal.me/zara-mobile/item-lst.html" target="_blank">https://oridal.me/ZARA/item-lst.html</a>
+-   상품 상세보기 : <a href="https://oridal.me/zara-mobile/item.html" target="_blank">https://oridal.me/ZARA/item.html</a>
+-   장바구니 : <a href="https://oridal.me/zara-mobile/cart.html" target="_blank">https://oridal.me/ZARA/cart.html</a>
+-   패션쇼 : <a href="https://oridal.me/zara-mobile/fahionshow.html" target="_blank">https://oridal.me/ZARA/fahionshow.html</a>
+-   브랜드 역사 : <a href="https://oridal.me/zara-mobile/history.html" target="_blank">https://oridal.me/ZARA/history.html</a>
 
 ## 참여인원 & 역할
 
