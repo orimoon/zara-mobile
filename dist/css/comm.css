@@ -417,8 +417,11 @@ legend {
   text-align: left;
   background: black;
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-200%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  max-width: 744px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #menu li {
@@ -1585,7 +1588,7 @@ a:focus {
 .gotop {
   position: fixed;
   bottom: 3%;
-  right: 3%;
+  right: 30%;
   opacity: 0.8;
   font-size: 30px;
 }
